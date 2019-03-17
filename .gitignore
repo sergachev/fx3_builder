@@ -1,0 +1,3 @@
+builder/*.tar.gz
+builder/*.tar.bz2
+project/build/

@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  builder:
+    build: ./builder
+    network_mode: "none"
+    volumes:
+      - /C/Users/silia/projects/fx3_builder/project:/project
+    command: >
+      bash -c
+      "cd /project/build &&
+      cmake -DFX3_INSTALL_PATH=/fx3 ../ &&
+      make"
