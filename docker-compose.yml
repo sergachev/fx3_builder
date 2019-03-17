@@ -5,7 +5,7 @@ services:
     build: ./builder
     network_mode: "none"
     volumes:
-      - /C/Users/silia/projects/fx3_builder/project:/project
+      - ./project:/project
     command: >
       bash -c
       "cd /project/build &&
